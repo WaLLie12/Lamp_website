@@ -22,3 +22,30 @@ const linkAction = () => {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n=>n.addEventListener('click', linkAction))
+
+const scrollHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the bg-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('bg-header') 
+                       : header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+const popularSwiper = new Swiper('.popular__content', {
+    // Optional parameters
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+ 
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints:{
+        768:{
+            centeredSlides: false,
+        }
+    }
+  });
