@@ -49,3 +49,32 @@ const popularSwiper = new Swiper('.popular__content', {
         }
     }
   });
+
+  const faqItems = document.querySelectorAll('.choose__faq-item')
+
+  faqItems.forEach((item) => {
+    const faqHeader = item.querySelector('.choose__faq-header')
+
+  faqHeader.addEventListener('click', () =>{
+
+    const openItem = document.querySelector('.faq_open')
+
+    toggleItem(item)
+
+    if (openItem && openItem != item) {
+        toggleItem(openItem)
+    }
+  })
+
+})
+
+const toggleItem = (item) => {
+    const faqContent = item.querySelector('.choose__faq-content')
+    if (item.classList.contains('faq_open')) {
+        faqContent.removeAttribute('style')
+        item.classList.remove('faq_open')
+    } else{
+    faqContent.style.height = faqContent.scrollHeight + 'px'
+    item.classList.add('faq_open')
+    }
+}
