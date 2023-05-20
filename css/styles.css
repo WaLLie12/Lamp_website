@@ -542,6 +542,7 @@ img {
     position: absolute;
     left: .5rem;
     bottom: 2.5rem;
+    text-transform: uppercase;
 }
 
 .choose__data{
