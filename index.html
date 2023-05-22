@@ -16,7 +16,7 @@
             <a href="#" class="nav__logo">SUN<span>LIGHT</span></a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link active-link" href="#home">Home</a></li>
                     <li class="nav__item"><a class="nav__link" href="#popular">Popular</a></li>
                     <li class="nav__item"><a class="nav__link" href="#choose">Choose</a></li>
                     <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
@@ -25,9 +25,16 @@
                     <i class="ri-close-line"></i>
                 </div>
             </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
+
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+
             </div>
+
         </nav>
     </header>
     <main class="main">
@@ -217,7 +224,7 @@
                 </div>
             </div>
         </section>
-        <section class="choose section">
+        <section class="choose section" id="choose">
             <div class="choose__container container grid">
                 <div class="choose__image">
                     <div class="choose__blob">
@@ -326,7 +333,7 @@
                 </div>
             </div>
         </section>
-        <section class="features section">
+        <section class="features section" >
             <div class="features__container container grid">
                 <div class="features__image">
                     <div class="features__blob">
@@ -379,7 +386,7 @@
                 </div>
             </div>
         </section>
-        <section class="products section">
+        <section class="products section" id="products">
             <div class="products__container container grid">
                 <div class="products__data">
                     <h2 class="section__title">
@@ -537,7 +544,7 @@
                 </div>
             </div>
         </section>
-        <section class="join section">
+        <section class="join section" id="join">
             <div class="join__container container grid">
                 <div class="join__bg grid">
                     <div class="join__image">
@@ -573,7 +580,78 @@
             </div>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div>
+                    <a href="#" class="footer__logo">SUN<span>LIGHT</span></a>
+                    <div class="footer__description">
+                        We have a vision to make <br> 
+                        lighting evenly distributed to all <br> 
+                        parts of the earth.
+                    </div>
+                </div>
+
+                <div class="footer__data grid">
+                    <div>
+                        <h3 class="footer__title">About</h3>
+                            <ul class="footer__links">
+                                <li><a href="" class="footer__link"> About Us</a></li>
+                                <li><a href="" class="footer__link"> Features</a></li>
+                                <li><a href="" class="footer__link">News & Blog</a></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Movement</h3>
+                            <ul class="footer__links">
+                                <li><a href="" class="footer__link"> What Sunlight</a></li>
+                                <li><a href="" class="footer__link">Support Us</a></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+                            <ul class="footer__links">
+                                <li><a href="" class="footer__link"> Why Sunlight</a></li>
+                                <li><a href="" class="footer__link"> Capital</a></li>
+                                <li><a href="" class="footer__link">Security</a></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">
+                            Follow us
+                        </h3>
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-facebook-circle-line"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-twitter-line"></i>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+               
+            </div>
+            <div class="footer__group">
+                <div class="footer__terms">
+                    <a href="#">Terms & Agreements</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <span class="footer__copy">
+                    &#169; Copyright Bedimcode. All rights reserved
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="/js/scrollreveal.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
